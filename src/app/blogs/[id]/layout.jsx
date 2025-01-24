@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
   }
 
   if (!isSignedIn) {
-    if (!isSignedIn) return  <div className="min-h-screen items-center text-center"><SignedOut > <SignInButton className='btn btn-outline'>SignIn</SignInButton></SignedOut></div>;
+    return  <div className="min-h-screen items-center text-center"><SignedOut > <SignInButton className='btn btn-outline'>SignIn</SignInButton></SignedOut></div>;
   }
 
   return (

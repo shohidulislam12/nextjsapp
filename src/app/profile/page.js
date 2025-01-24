@@ -6,7 +6,9 @@ const page = () => {
     const { isLoaded, isSignedIn, user } = useUser();
 
     if (!isLoaded) return <p className="min-h-screen text-3xl  text-center">Loading...</p>;
-    if (!isSignedIn) return <p  className="min-h-screen text-3xl  text-center">Please sign in </p>;
+    if (!isSignedIn) {
+        return  <div className="min-h-screen items-center text-center text-2xl  my-10">Plese Sign in Frist <SignedOut > <SignInButton className='btn btn-outline'>SignIn</SignInButton></SignedOut></div>;
+      }
     console.log(user)
     return (
         <div className="min-h-screen">
