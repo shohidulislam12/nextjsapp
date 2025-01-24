@@ -5,6 +5,7 @@ import {
   ClerkProvider,
 
 } from '@clerk/nextjs'
+import Footer from "@/component/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
          <Navigation></Navigation> 
    
   {children}
-  <footer className="p-5 text-center text-3xl  ">Blog Post End</footer>
+ <Footer></Footer>
 </body>
 </html>
 </ClerkProvider>

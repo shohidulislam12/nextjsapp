@@ -6,8 +6,8 @@ const Details =async ({id}) => {
 // const userOj=await currentUser()
 //console.log('auth',authObj,userOj)
     return (
-        <div>
-            <Link href={`/blogs/${id}`}>Details</Link>
+        <div >
+            <Link className="btn btn-outline text-3xl"  href={`/blogs/${id}`}>Details</Link>
         </div>
     );
 };
